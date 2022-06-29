@@ -1,0 +1,81 @@
+{
+    "text": ["hi","hello","anyone","available"],
+    "reply": "How may I help you?",
+    "option": [
+        {
+            "text": ["price", "cost", "rates"],
+            "reply": "Sure, for what mode of call?",
+            "option": [
+                {
+                    "text": ["voice", "audio"],
+                    "reply": "Do you want the hourly rates or our subscription plans.",
+                    "option": [
+                        {
+                            "text": ["hourly", "hourwise"],
+                            "reply": "We charge 2$ per hour",
+                            "option": []
+                        },
+                        {
+                            "text": ["subscription", "plan"],
+                            "reply": "We have multiple plans. Check out on our website.",
+                            "option": []
+                        }
+                    ]
+                },
+                {
+                    "text": ["video", "visual"],
+                    "reply": "We have 2 platforms Web-client or Zoom",
+                    "option": [
+                        {
+                            "text": ["web", "browser"],
+                            "reply": "We charge 5$ per hour",
+                            "option": []
+                        },
+                        {
+                            "text": ["zoom"],
+                            "reply": "You can download our addon for zoom",
+                            "option": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": ["platform", "support", "compatiblity"],
+            "reply": "We have multiple platform support, for which platform are you interested?",
+            "option": [
+                {
+                    "text":["mobile","app","ios","android"],
+                    "reply":"We support android and IOS.\nGooglePlay: <link>\nAppstore: <link>",
+                    "option":[]
+                },
+                {
+                    "text":["browser","web"],
+                    "reply":"We support all browsers. For more Info: <website link>",
+                    "option":[]
+                },
+                {
+                    "text":["zoom","addon", "conference"],
+                    "reply":"Our addon is available on Zoom.\nZoom: <link>",
+                    "option":[]
+                }
+            ]
+        },
+        {
+            "text":["language"],
+            "reply":"We support multiple languages. Please let us know your desired language.",
+            "option":[]
+        },
+        {
+            "text":["about","intro", "jeenie"],
+            "reply":"Jeenie is a platform to help you communicate, where you can't.\nIs there anything we can help you with.",
+            "option":[
+                {
+                    "text":["time", "delay", "loading", "connect"],
+                    "reply":"We can connect you to our jeenie's in less than a miniute.",
+                    "option":[]
+                }
+            ]
+        }
+    ]
+}

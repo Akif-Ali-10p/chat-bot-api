@@ -22,8 +22,9 @@ def get_armstrong(n):
 @api.route('/conversation', methods=['POST'])
 def chat_conversation():
   response_message = ""
-  user_input = request.json['user_input']
-  return actions_conversation(user_input)
+  user_input = request.json
+  # return actions_conversation(user_input)
+  return actions_decission(user_input)
 
 
 

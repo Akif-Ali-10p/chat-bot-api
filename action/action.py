@@ -1,3 +1,5 @@
+import action.tree as tree
+
 def actions_conversation(user_input):
     user_input=user_input.lower()
     if user_input == "hi" or user_input == "hello":
@@ -18,3 +20,11 @@ def actions_conversation(user_input):
 
     return { "data": response_message }
 
+def actions_decission(user_input):
+    user_input["text"] = str(user_input["text"]).lower().strip()
+    if "back" in user_input["text"] or "menu" in user_input["text"] or "start" in user_input["text"]:
+        response = tree.getNodeData(-1, user_input["text"])    
+    else:
+        response = tree.getNodeData(user_input["id"], user_input["text"])
+    print(response)
+    return response
